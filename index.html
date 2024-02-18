@@ -13,8 +13,8 @@
 
 </head>
 
-<body class="sm:bg-zinc-700 sm:flex sm:justify-center sm:items-center ">
-  <main class="flex flex-col justify-center sm:bg-white sm:rounded-lg sm:flex-row-reverse sm:w-2/3 sm:p-4">
+<body class="default-form sm:bg-zinc-700 sm:flex sm:h-screen sm:justify-center sm:items-center">
+  <main class="flex flex-col justify-center sm:bg-white sm:rounded-lg sm:flex sm:flex-row-reverse sm:justify-center sm:w-2/3 sm:rounded-lg sm:p-5">
 
     <section class="image-mobile flex flex-col sm:hidden">
     <img src="images/illustration-sign-up-mobile.svg" alt="abstract orange image" class="rounded-b-lg">
@@ -22,43 +22,31 @@
 
     <section class="image-desktop hidden sm:flex sm:flex-row sm:w-1/2">
     <img src="images/illustration-sign-up-desktop.svg" alt="abstract orange image"
-      class="rounded-lg ">
+      class="rounded-lg">
     </section>
 
-    <section class="info mx-2 my-7 px-3 flex flex-col justify-center sm:w-1/2">
+    <section class="info mx-2 my-7 px-3 flex flex-col justify-center sm:w-2/3 sm:my-2 sm:mx-0  sm:pl-4 sm:pr-9">
 
-      <div class="text my-4">
-        <h1 class=" text-4xl font-bold sm:">Stay updated!</h1>
-        <p class="my-5 text-md">Join 60,000+ product managers receiving monthly updates on:</p>
-       <!-- <div class="listy flex justify"> -->
-        <ul class="space-y-4 s list-inside list-image-[url(images/icon-list.svg)]">
+      <div class="text my-4 sm:my-0">
+        <h1 class=" text-4xl font-bold">Stay updated!</h1>
+        <p class="my-5 text-md sm:text-sm">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="space-y-4 list-inside list-image-[url(images/icon-list.svg)] sm:text-sm sm:space-y-3">
           <li>Product discovery and building what matters</li>
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <!-- </div> -->
       </div>
 
-      <div class="interactive flex flex-col mt-8">
+      <div class="interactive">
+        <form  class="interactive flex flex-col mt-8 sm:mt-6">
         <label class="text-sm font-bold" for="email-address">Email address</label>
-        <input class="my-3 px-8 py-4 border border-slate-200 rounded-lg" id="email-address" placeholder="email@company.com" name="email" type="email" autocomplete="email"
-          required>
-        <button class="mt-3 bg-slate-900 text-slate-200 text-md rounded-lg px-8 py-4 hover:bg-gradient-to-r from-red-500 to-orange-500 ..." type="submit">Subscribe to monthly newsletter</button>
+        <input required class="my-3 px-8 py-4 border border-slate-200 rounded-lg sm:my-2 sm:py-3" id="email-address" placeholder="email@company.com" name="email" type="email">
+        <button type="submit" class="mt-3 px-8 py-4 bg-slate-900 text-slate-200 text-md rounded-lg hover:bg-gradient-to-r from-red-500 to-orange-500 sm:py-3">Subscribe to monthly newsletter</button>
+      </form>
       </div>
 
     </section>
   </main>
-
-
-
-  <!-- Success message 
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
 
   <div class="attribution" style="display: none">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
